@@ -1,0 +1,40 @@
+<!-- array.html -->
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>배열 종류대로 타임리프로 출력하기</h2>
+    <p>배열은 배열 꺼내는 방법으로 타임리프 쓰면 된다</p>
+
+    <hr />
+    <br />
+    <h2>ArrayList사용 시 타임리프</h2>
+    
+     <nav>
+     <a th:text="${urls.get(0)}" 
+        th:href="${urls.get(0)}"></a>
+     </nav> 
+ 
+     <nav>
+     <a th:text="${urls.get(1)}" 
+        th:href="${urls.get(1)}"></a>
+    </nav>
+
+      <nav>
+     <a th:text="${urls.get(2)}" 
+        th:href="${urls.get(2)}"></a>
+    </nav>
+
+       <hr />
+    <br />
+    <h2>이미지들 출력</h2>
+    <img th:src="${images[0]}" alt="" />
+    <img th:src="${images[1]}" alt="" />
+    <img th:src="${images[2]}" alt="" />
+    
+  </body>
+</html>

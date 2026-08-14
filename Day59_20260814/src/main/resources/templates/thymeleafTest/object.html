@@ -1,0 +1,18 @@
+<!-- object.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Person 목록</h3>
+
+  <div th:each="person : ${persons}">
+    <p th:text="|이름: ${person.name}|">이름</p>
+    <p th:text="|나이: ${person.age}|"></p>
+    <p th:text="|MBTI: ${person.mbti}|"></p>
+  </div>
+</body>
+</html>
